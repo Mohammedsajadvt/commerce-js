@@ -94,7 +94,7 @@ class _OnBoardingState extends State<OnBoardingScreen> {
                   child: FloatingActionButton(
                     onPressed: () {
                       setState(() {
-                        Navigator.pushReplacementNamed(context, '/landing');
+                        Navigator.pushReplacementNamed(context, '/home');
                       });
                     },
                     shape: const BeveledRectangleBorder(

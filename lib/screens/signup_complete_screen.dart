@@ -52,7 +52,7 @@ class _SignupSuccessState extends State<SignupSuccess> {
                     child: OutlinedButton(
                         onPressed: () {
                           Navigator.pushReplacementNamed(
-                              context, '/home');
+                              context, '/onboarding');
                         },
                         child: const Text("Start Shopping"),
                         style: ButtonStyle(
