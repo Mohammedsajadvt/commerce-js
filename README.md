@@ -24,7 +24,7 @@
 
 <img src="screenshots/10.png" width=256 style:inline-block/>
 
-<img src="screenshots/11.png" width=256 style:inline-block/>
+<img src="screenshots/11" width=256 style:inline-block/>
 
 <img src="screenshots/12.png" width=256 style:inline-block/>
 
