@@ -8,9 +8,4 @@ abstract class ProductEvent extends Equatable{
 
 class LoadProducts extends ProductEvent{}
 
-class LoadProductsByPriceFilter extends ProductEvent{
-  final int priceFrom;
-  final int priceTo;
-LoadProductsByPriceFilter(this.priceFrom,this.priceTo);
 
-}

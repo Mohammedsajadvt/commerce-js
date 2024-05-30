@@ -19,7 +19,6 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     } catch (e) {
       emit(ProductError());
     }
-    LoadProductsByPriceFilter(event, emit) {}
   }
 }
 
