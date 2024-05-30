@@ -154,117 +154,110 @@ class _HomeScreenState extends State<HomeScreen> {
               const Padding(
                 padding: EdgeInsets.only(right: 20.0, top: 20.0),
               ),
+             Row(
+  children: [
+    const Padding(
+      padding: EdgeInsets.only(top: 10, left: 20, bottom: 20),
+      child: Text(
+        "New Arrivals",
+        style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      ),
+    ),
+    const Spacer(), 
+    Padding(
+      padding: const EdgeInsets.only(right: 10,bottom: 12),
+      child: TextButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/product');
+        },
+        child: const Text(
+          "View All",
+          style: TextStyle(color: Colors.grey, fontSize: 15),
+        ),
+      ),
+    )
+  ],
+),
+
+
               Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 10, left: 20, bottom: 20),
-                    child: Text("New Arrivals",
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold)),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 150),
-                    child: TextButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/product');
-                        },
-                        child: const Text(
-                          "View All",
-                          style: TextStyle(color: Colors.grey, fontSize: 15),
-                        )),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  InkWell(
-                      onTap: () {
-                        setState(() {
-                          Navigator.pushNamed(context, '/product');
-                        });
-                      },
-                      child: Card(
-                        elevation: 1,
-                        child: SizedBox(
-                          width: 200,
-                          height: 250,
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "assets/images/image 91 .png",
-                              ),
-                              const Text(
-                                "The Marc Jacobs",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20),
-                              ),
-                              const Text(
-                                "Traveler Tote",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              const Text(
-                                "₹195.00",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              )
-                            ],
-                          ),
-                        ),
-                      )),
-                  InkWell(
-                      onTap: () {
-                        setState(() {
-                          Navigator.pushNamed(context, '/product');
-                        });
-                      },
-                      child: Card(
-                        elevation: 1,
-                        child: SizedBox(
-                          width: 195,
-                          height: 250,
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "assets/images/image.png",
-                              ),
-                              const Text(
-                                "Axel Arigato",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20),
-                              ),
-                              const Text(
-                                "Clean 90 Triple Sneakers",
-                                style: TextStyle(fontSize: 15),
-                              ),
-                              const Text(
-                                "₹245.00",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              )
-                            ],
-                          ),
-                        ),
-                      )),
-                      
-                ],
-              ),
+  children: [
+    Expanded(
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, '/product');
+        },
+        child: Card(
+          elevation: 1,
+          child: SizedBox(
+            height: 250,
+            child: Column(
+              children: [
+                Image.asset("assets/images/image 91 .png"),
+                const Text(
+                  "The Marc Jacobs",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                const Text(
+                  "Traveler Tote",
+                  style: TextStyle(fontSize: 15),
+                ),
+                const Text(
+                  "₹195.00",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+    Expanded(
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, '/product');
+        },
+        child: Card(
+          elevation: 1,
+          child: SizedBox(
+            height: 250,
+            child: Column(
+              children: [
+                Image.asset("assets/images/image.png"),
+                const Text(
+                  "Axel Arigato",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                const Text(
+                  "Clean 90 Triple Sneakers",
+                  style: TextStyle(fontSize: 15),
+                ),
+                const Text(
+                  "₹245.00",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+  ],
+),
+
                
             ],
           ),
         ),
       ),
       bottomNavigationBar: NavigationBar(
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-          NavigationDestination(icon: Icon(Icons.trolley), label: ""),
-          NavigationDestination(icon: Icon(Icons.notifications), label: ""),
-          NavigationDestination(icon: Icon(Icons.person), label: "")
-        ],
-      ),
+      destinations: const [
+      NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+      NavigationDestination(icon: Icon(Icons.trolley), label: ""),
+      NavigationDestination(icon: Icon(Icons.notifications), label: ""),
+      NavigationDestination(icon: Icon(Icons.person), label: "")
+],
+),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:e_commerce/model/product_model.dart';
+import 'package:e_commerce/data/model/product_model.dart';
 import 'package:http/http.dart' as http;
 
 class APIService {

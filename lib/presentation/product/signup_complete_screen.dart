@@ -46,31 +46,31 @@ class _SignupSuccessState extends State<SignupSuccess> {
               ),
               Row(
                 children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(top: 290, left: 5 , right: 5,bottom: 20),
-                    child: OutlinedButton(
-                        onPressed: () {
-                          Navigator.pushReplacementNamed(
-                              context, '/onboarding');
-                        },
-                        child: const Text("Start Shopping"),
-                        style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.all(Colors.white),
-                            minimumSize:
-                                MaterialStateProperty.all(const Size(400, 50)),
-                            backgroundColor: MaterialStateProperty.all(
-                              Colors.black,
-                            ),
-                            side: MaterialStateProperty.all(const BorderSide(
-                                color: Colors.black, width: 2)),
-                            textStyle:
-                                MaterialStateProperty.all(const TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            )))),
-                  ),
+                 Padding(
+  padding: const EdgeInsets.only(top: 290, left: 20, right: 10, bottom: 20),
+  child: OutlinedButton(
+    onPressed: () {
+      Navigator.pushReplacementNamed(context, '/home');
+    },
+    style: ButtonStyle(
+      foregroundColor: WidgetStateProperty.all(Colors.white),
+      minimumSize: WidgetStateProperty.all(
+        Size(MediaQuery.of(context).size.width / 1.1, 50),
+      ),
+      backgroundColor: WidgetStateProperty.all(Colors.black),
+      side: WidgetStateProperty.all(
+        const BorderSide(color: Colors.black, width: 1),
+      ),
+      textStyle: WidgetStateProperty.all(
+        const TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ),
+    child: const Text("Start Shopping"),
+  ),
+),
                 ],
               )
             ],

@@ -1,5 +1,5 @@
-import 'package:e_commerce/model/onboarding_model.dart';
-import 'package:e_commerce/widgets/onboarding_data.dart';
+import 'package:e_commerce/presentation/product/model/onboarding_model.dart';
+import 'package:e_commerce/presentation/product/widgets/onboarding_data.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -93,9 +93,7 @@ class _OnBoardingState extends State<OnBoardingScreen> {
                   alignment: Alignment.bottomRight,
                   child: FloatingActionButton(
                     onPressed: () {
-                      setState(() {
-                        Navigator.pushReplacementNamed(context, '/home');
-                      });
+                     Navigator.pushReplacementNamed(context, "/landing");
                     },
                     shape: const BeveledRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(26))),

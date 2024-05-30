@@ -169,14 +169,14 @@ class _RegisterScreenState extends State<SignupScreen> {
                   Navigator.pushNamed(context, '/signup-complete');
                 }
               },
+              style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(Colors.black),
+                  foregroundColor:  WidgetStateProperty.all(Colors.white),
+                  minimumSize: WidgetStateProperty.all(const Size(400, 50))),
               child: const Text(
                 "Login",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.black),
-                  foregroundColor: MaterialStateProperty.all(Colors.white),
-                  minimumSize: MaterialStateProperty.all(const Size(400, 50))),
             ),
           ),
         ],

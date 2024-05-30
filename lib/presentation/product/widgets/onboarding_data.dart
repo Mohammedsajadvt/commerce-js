@@ -1,4 +1,4 @@
-import 'package:e_commerce/model/onboarding_model.dart';
+import 'package:e_commerce/presentation/product/model/onboarding_model.dart';
 
 List<OnBoarding> list = [
   OnBoarding(

@@ -59,6 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: TextFormField(
+                        cursorColor: Colors.transparent,
                         decoration: const InputDecoration(
                             labelText: "Email",
                             labelStyle:
